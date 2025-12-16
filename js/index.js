@@ -48,7 +48,7 @@ element.addEventListener("click", () => {
   count++;
   if (count === 5) {
         document.getElementById("holdText").textContent = "え！？これでコードの半分も書けてないの！？"  
-  }
+   } 
 });
 
 
