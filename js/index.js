@@ -42,15 +42,15 @@ tapText.addEventListener("click",() => {
     }
 });
 
-let lastTap = 0;
-element.addEventListener("touchend", () => {
-  const now = Date.now();
-  if (now - lastTap < 300) {
-    document.getElementById("holdText").textContent =
-        "え！？これでコードの半分も書けてないの！？絶望しながらも書いたから最後まで見てくれると全俺が泣きます。"
+let count = 0;
+element.addEventListener("click", () => {
+  count++;
+  if (count === 5) {
+        document.getElementById("holdText").textContent =
+        "え！？これでコードの半分も書けてないの！？絶望しながらも書いたから最後まで見てくれると全俺が泣きます。" 
   }
-  lastTap = now;
 });
+
 
 
 
