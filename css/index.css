@@ -1,0 +1,15 @@
+#float {
+    display: inline-block;
+    position: relative;
+    animation: yura 3s infinite ease-in-out;
+}
+
+@keyframes yura {
+    0% { top: 0px; }
+    50% { top: 16px; }
+    100% { top: 0px; }
+}
+
+#only {
+    color: #666;
+}
