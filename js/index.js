@@ -47,8 +47,8 @@ const element = document.getElementById("hold");
 element.addEventListener("click", () => {
   count++;
   if (count === 5) {
-        document.getElementById("holdText").textContent =
-        "え！？これでコードの半分も書けてないの！？絶望しながらも書いたから最後まで見てくれると全俺が泣きます。" 
+        document.getElementById("holdText").textContent = "え！？これでコードの半分も書けてないの！？絶望しながらも書いたから最後まで見てくれると全俺が泣きます。" 
+       
   }
 });
 
