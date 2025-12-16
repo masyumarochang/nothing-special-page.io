@@ -40,7 +40,8 @@ tapText.addEventListener("click",() => {
     if (taps === 9){
         tapText.textContent = "ありがとう！"
     }
-})
+});
+
 let lastTap = 0;
 element.addEventListener("touchend", () => {
   const now = Date.now();
