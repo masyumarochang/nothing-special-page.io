@@ -43,6 +43,7 @@ tapText.addEventListener("click",() => {
 });
 
 let count = 0;
+const element = document.getElementById("hold");
 element.addEventListener("click", () => {
   count++;
   if (count === 5) {
