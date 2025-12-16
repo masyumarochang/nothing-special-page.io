@@ -41,20 +41,17 @@ tapText.addEventListener("click",() => {
         tapText.textContent = "ありがとう！"
     }
 })
-
-let timer;
-const hold = document.getElementById("hold");
-
-hold.addEventListener("touchstart",() => {
-    timer = setTimeout(() => {
-        document.getElementById("holdText").textContent =
-        "え！？これでコードの半分も書けてないの！？見てくれる人のために頑張ります..."
-    }, 800);
+let lastTap = 0;
+element.addEventListener("touchend", () => {
+  const now = Date.now();
+  if (now - lastTap < 300) {
+    document.getElementById("holdText").textContent =
+        "え！？これでコードの半分も書けてないの！？絶望しながらも書いたから最後まで見てくれると全俺が泣きます。"
+  }
+  lastTap = now;
 });
 
-hold.addEventListener("touchend",() => {
-    clearTimeout(timer);
-});
+
 
 const special = "0510";
 const dad = "0901";
